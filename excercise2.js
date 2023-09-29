@@ -1,6 +1,6 @@
 const myArray = [];
 
-
+//adding tasks and outputing the length using the .length
 let AddTask = (task) => {
     myArray.push(task);
     console.log("Task " + task + " was inserted into array");
@@ -8,7 +8,8 @@ let AddTask = (task) => {
 }
 
 AddTask("Hello");
-AddTask("Goodbye")
+AddTask("Goodbye");
+//listing the array with the foreach function
 let ListAllTasks = () => {
     myArray.forEach((item) => {
         console.log(item);
@@ -17,7 +18,7 @@ let ListAllTasks = () => {
 
 ListAllTasks();
 
-//The delete task grabs the index of the passed string, 
+//The delete task grabs the index of the passed string, and if it is present it is deleted if its not present it a message saying its not found is posted
 let deleteTask = (task) => {
     let index = myArray.indexOf(task);
     if (index > -1) {
